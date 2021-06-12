@@ -17,7 +17,7 @@ datacenter = "toronto"
 region = "east"
 
 advertise {
-  http = 0.0.0.0
+    http = "0.0.0.0"
 //   http = "{{ GetInterfaceIP `eth1` }}"
 //   rpc  = "{{ GetInterfaceIP `eth1` }}"
 //   serf = "{{ GetInterfaceIP `eth1` }}"
