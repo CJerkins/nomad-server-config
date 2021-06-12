@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # # Form Consul Cluster
 # ps -C consul
 # retval=$?
@@ -14,5 +15,5 @@ retval=$?
 if [ $retval -eq 0 ]; then
   sudo killall nomad
 fi
-sudo cp ~/nomad-config/server.hcl /etc/nomad.d/server.hcl
+sudo cp server.hcl /etc/nomad.d/server.hcl
 sudo nohup nomad agent -config /etc/nomad.d/server.hcl &>$HOME/nomad.log &
