@@ -19,8 +19,8 @@ region = "east"
 advertise {
   http = 0.0.0.0
 //   http = "{{ GetInterfaceIP `eth1` }}"
-  rpc  = "{{ GetInterfaceIP `eth1` }}"
-  serf = "{{ GetInterfaceIP `eth1` }}"
+//   rpc  = "{{ GetInterfaceIP `eth1` }}"
+//   serf = "{{ GetInterfaceIP `eth1` }}"
 }
 
 // plugin "raw_exec" {
